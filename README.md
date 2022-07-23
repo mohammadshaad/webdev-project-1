@@ -27,7 +27,7 @@ See hover states for interactive elements
 
 ### Links
 
-- Solution URL: [github.com/mohammadshaad/webdev-project-01](https://github.com/mohammadshaad/webdev-project-01)
+- Solution URL: [github.com/mohammadshaad/webdev-project-02](https://github.com/mohammadshaad/webdev-project-02)
 
 ## My process
 I first tried to understand the prototype/design of the website. Then I wrote the html part of the website. Then I started writing css part. I stuck at some points so that time I referred others solution. I found the solution of other participants from slack community of Frontendmentor. This was the process that I followed.
