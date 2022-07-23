@@ -1,0 +1,210 @@
+:root {
+  /* Primary */
+  --SoftBlue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+
+  /* Neutral */
+  --MainBG: hsl(217, 54%, 11%);
+  --CardBG: hsl(216, 50%, 16%);
+  --Line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background: var(--MainBG);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+.box {
+  width: 330px;
+  height: 540px;
+  background: var(--CardBG);
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 10px 10px rgb(17, 24, 34);
+  -moz-box-shadow: 0px 0px 5px 0px rgb(17, 24, 34);
+  box-shadow: 0px 0px 5px 0px rgb(17, 24, 34);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.box-items {
+  margin: 25px 25px;
+}
+
+.img-eqm {
+  border-radius: 10px;
+  height: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.img-eqm a {
+  text-decoration: none;
+}
+
+.img-eqm a img {
+  width: 280px;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.img-eqm a img:hover {
+  opacity: 50%;
+  transition: all 0.3s ease;
+}
+
+.img-eqm:hover {
+  background-color: var(--Cyan);
+  transition: all 0.3s ease;
+}
+
+.img-eqm .icon-view {
+  display: none;
+}
+
+.img-eqm a:hover + .icon-view {
+  display: block;
+  position: relative;
+  width: 40px;
+  bottom: 165px;
+  left: 2px;
+  z-index: 3;
+  transition: all 0.3s ease;
+}
+
+.text {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.title {
+  margin-top: 0px;
+  color: var(--White);
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 25px;
+  text-decoration: none;
+}
+
+.title:hover {
+  color: var(--Cyan);
+  transition: all 0.3s ease;
+}
+
+.description {
+  color: var(--SoftBlue);
+  font-weight: 300;
+}
+
+.details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.ethereum {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.ethereum .ethereum-value {
+  color: var(--Cyan);
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.days {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+}
+
+.days .days-left {
+  color: var(--SoftBlue);
+  font-weight: 300;
+  margin-left: 5px;
+}
+
+hr {
+  height: 1px;
+  background-color: var(--Line);
+  border: 0;
+  margin: 20px 0px;
+}
+
+.creator {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 30px;
+  border: 1px solid var(--White);
+  border-radius: 50px;
+
+}
+
+.creator-name {
+  color: var(--SoftBlue);
+  font-weight: 300;
+  margin-left: 20px;
+}
+
+.creator-profile {
+  color: var(--White);
+  text-decoration: none;
+}
+
+.creator-profile:hover {
+  color: var(--Cyan);
+  transition: all 0.3s ease;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  position: relative;
+  top: 50px;
+  color: var(--White);
+}
+
+.attribution a {
+  text-underline-offset: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+}
+
+.attribution a:hover {
+  color: var(--Cyan);
+}
+
+.frontendmentor {
+  color: yellow;
+}
+
+.myname {
+  color: deepskyblue;
+}
